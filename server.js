@@ -57,6 +57,12 @@ app.get('/help',(req,res) =>{
     pageTitle: 'Help Page'
   })
 });
+
+app.get('/projects',(req,res) =>{
+  res.render('projects.hbs',{
+    pageTitle:'Projects'
+  })
+});
 // app.get('/', (req,res) =>{
 //   res.send({
 //     name:'Andrew',
